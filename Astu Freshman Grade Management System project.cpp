@@ -3,20 +3,6 @@
 #include <iomanip>
 using namespace std;
 
-/*
-THIS IS OUR PROJECT WHICH MANAGES ASTU PRE ENGINEERING STUDENTS GRADE, CALCULATES GPA AND CGPA OF EACH STUDENT, STORE, DISPLAY AND SEARCH IT.
-IN THIS PROJECT WE HAVE USED TWO STRANGE BUILT-IN  FUNCTIONS WHICH IS get() and setfill(), WHICH WE HAVEN'T LEARNED IN OUR C++ COURSE.
-WE USED IT JUST TO MAKE OUR PROJECT FULLY FUNCTIONAL AND ALSO INTERRACTIVE.
-
-NAME OF STUDENTS             GROUP                        ID NUMBER
-
-FUAD SANO                      20                         UGR/34476/16
-KIDUS YARED                    20                         UGR/34765/16
-MIHRET MEQUANENT               20                         UGR/34955/16
-MUSSE OMER                     20                         UGR/35042/16
-MIHRETAB NIGATU                20                         UGR/34959/16
-EDEN BIRHANU                   20                         UGR/34251/16
-*/
 
 const int TOTAL_STUDENTS = 30; // Maximum number of students, since the number of students is 20-30 per section in this university.
 
@@ -34,37 +20,7 @@ void searchStudentByStudentID(Student students[], int total);
 string calculateGrade(int marks);
 double calculateGPA(int marks[], int creditHours[]);
 
-int main() {
- cout << left << setw(30) << "NAME OF STUDENTS"
-         << left << setw(20) << "GROUP"
-         << left << setw(20) << "ID NUMBER" << endl;
-    cout << setfill('-') << setw(70) << "-" << setfill(' ') << endl;
-
-    cout << left << setw(30) << "FUAD SANO"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/34476/16" << endl;
-
-    cout << left << setw(30) << "KIDUS YARED"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/34765/16" << endl;
-
-    cout << left << setw(30) << "MIHRET MEQUANENT"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/34955/16" << endl;
-
-    cout << left << setw(30) << "MUSSE OMER"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/35042/16" << endl;
-
-    cout << left << setw(30) << "MIHRETAB NIGATU"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/34959/16" << endl;
-
-    cout << left << setw(30) << "EDEN BIRHANU"
-         << left << setw(20) << "20"
-         << left << setw(20) << "UGR/34251/16" << endl;
-
-
+int main(){
 
 
     Student students[TOTAL_STUDENTS]; // Array to store student data
