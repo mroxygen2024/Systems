@@ -4,26 +4,6 @@
 
 using namespace std;
 
-/*THIS PROJECT CODE IMPLEMENTS A HOTEL MANAGEMENT SYSTEM THAT ALLOWS USERS TO PERFORM SEVERAL OPERATIONS.
-YOU CAN ADD NEW RESERVATIONS TO A FILE, REMOVE EXISTING RESERVATIONS BY ROOM NUMBER, CHECK-IN GUESTS TO AVAILABLE ROOMS,
-CHECK-OUT GUESTS AND DELETE THEIR RESERVATIONS, AND DISPLAY THE CURRENT AVAILABILITY OF ROOMS ALONG WITH GUEST DETAILS.
-USERS INTERACT THROUGH A MENU SYSTEM WHERE THEY SELECT OPERATIONS USING NUMERICAL OPTIONS. THE SYSTEM READS AND WRITES
-RESERVATION DATA TO A BINARY FILE NAMED "reservations.txt".
-
-
-
-WE USED BINARY FILES SINCE BINARY FILES STORE DATA IN A RAW FORMAT, RETAINING THE EXACT STRUCTURE OF THE Reservation STRUCT,
-INCLUDING ALL DATA MEMBERS WITHOUT ANY CONVERSIONS OR EXTRA FORMATTING.
-
-NAME OF STUDENTS             GROUP                        ID NUMBER
-
-NATNAEL TESHOME                21                         UGR/35146/16
-ABEL DEME                      21                         UGR/33799/16
-MIKIAS GURMESA                 21                         UGR/34964/16
-EZEDIN MOHAMMED                22                         UGR/34389/16
-IBISA LETA                     21                         UGR/34651/16
-
-*/
 
 const char *FILENAME = "reservations.txt";
 const int MAX_ROOMS = 100;
@@ -47,33 +27,6 @@ void displayRoomAvailability();
 // MAIN FUNCTION
 int main()
 {
-
-    cout << left << setw(30) << "NAME OF STUDENTS"
-         << left << setw(20) << "GROUP"
-         << left << setw(20) << "ID NUMBER" << endl;
-    cout << setfill('-') << setw(70) << "-" << setfill(' ') << endl;
-
-    cout << left << setw(30) << "NATNAEL TESHOME"
-         << left << setw(20) << "21"
-         << left << setw(20) << "UGR/35146/16" << endl;
-
-    cout << left << setw(30) << "ABEL DEME"
-         << left << setw(20) << "21"
-         << left << setw(20) << "UGR/33799/16" << endl;
-
-    cout << left << setw(30) << "MIKIAS GURMESA"
-         << left << setw(20) << "21"
-         << left << setw(20) << "UGR/34964/16" << endl;
-
-    cout << left << setw(30) << "EZEDIN MOHAMMMED"
-         << left << setw(20) << "22"
-         << left << setw(20) << "UGR/34389/16" << endl;
-
-    cout << left << setw(30) << "IBISA LETA"
-         << left << setw(20) << "21"
-         << left << setw(20) << "UGR/34651/16" << endl
-         << endl
-         << endl;
 
     int choice;
 
